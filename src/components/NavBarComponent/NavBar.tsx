@@ -66,7 +66,7 @@ const navs: navItem[] = [
 ];
 const NavBar = () => {
   return (
-    <nav className="flex gap-20 justify-between items-center mt-3 mx-auto max-w-[1340px] max-md:mx-5">
+    <nav className="flex gap-20 justify-between items-center mt-3 mx-auto max-w-[1340px] xl:mx-5 lg:mx-4 max-lg:mx-7">
       {/* desktop view */}
       <h1 className="font-bold text-4xl">snap</h1>
       <div className="flex justify-between w-full max-lg:hidden">

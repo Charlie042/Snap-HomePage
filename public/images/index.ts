@@ -9,7 +9,8 @@ import Planning from "./icon-planning.svg"
 import Reminder from "./icon-reminders.svg"
 import Todo from "./icon-todo.svg"
 
-
+import HeroDesktop from "./image-hero-desktop.png"
+import HeroMobile from "./image-hero-mobile.png"
 export {
     Audiophile,
     Databiz,
@@ -20,5 +21,7 @@ export {
     Menu,
     Planning,
     Reminder,
-    Todo
+    Todo,
+    HeroDesktop,
+    HeroMobile
 }
