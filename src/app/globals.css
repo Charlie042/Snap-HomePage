@@ -25,3 +25,34 @@ body {
   background: var(--background);
   
 }
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    /* Start off the screen to the right */
+  }
+
+  to {
+    transform: translateX(0);
+    /* Slide into place */
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    /* Start at position */
+  }
+
+  to {
+    transform: translateX(100%);
+    /* Slide off the screen to the right */
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.animate-slide-out {
+  animation: slideOut 0.5s ease forwards;
+}

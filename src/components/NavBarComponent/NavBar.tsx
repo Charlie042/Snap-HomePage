@@ -1,6 +1,6 @@
 "use client";
-
-import React from "react";
+import SideNav from "./SideNav"
+import React, { useState } from "react";
 import NavItem from "./NavItem";
 import {
   Todo,
@@ -13,7 +13,7 @@ import Image from "next/image";
 
 type subItems = {
   title: string;
-  icon?: any;
+  icon?: string;
 };
 
 type navItem = {
@@ -65,6 +65,11 @@ const navs: navItem[] = [
   },
 ];
 const NavBar = () => {
+
+  const [isNavOpen,setIsNavOpen] = useState(false)
+
+  
+
   return (
     <nav className="flex gap-20 justify-between items-center mt-3 mx-auto max-w-[1340px] xl:mx-5 lg:mx-4 max-lg:mx-7">
       {/* desktop view */}
@@ -85,10 +90,19 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* mobile view */}
-      <div className="text-red-500 lg:hidden">
-        <Image src={Menu} alt="Menu Button" width={30} height={30} />
-      </div>
+      {/* mobile view */} 
+      {isNavOpen ? (
+        <div className="lg:hidden">
+          <SideNav navclose={setIsNavOpen} isOpen = {isNavOpen}/>
+        </div>
+      ) : (
+        <div
+          className=" lg:hidden"
+          onClick={() => setIsNavOpen((prev) => !prev)}
+        >
+          <Image src={Menu} alt="Menu Button" width={30} height={30} />
+        </div>
+      )}
     </nav>
   );
 };

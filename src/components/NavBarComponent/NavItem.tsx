@@ -2,11 +2,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { LuChevronDown } from "react-icons/lu";
 import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 type subItems = {
   title: string;
-icon?: StaticImport
+icon?: string
 
 };
 
