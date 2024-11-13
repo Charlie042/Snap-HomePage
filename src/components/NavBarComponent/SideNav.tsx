@@ -39,7 +39,7 @@ const SideNav: React.FC<SideNavProps> = ({ navclose, isOpen, navs }) => {
       onClick={() => navclose(false)}
     >
       <div
-        className={`fixed top-0 right-0 w-80 h-full bg-white p-4 ${
+        className={`fixed top-0 right-0 md:w-80 w-52 h-full bg-white p-4 ${
           isOpen ? "animate-slide-in" : "animate-slide-out"
         }`}
         onClick={(e) => e.stopPropagation()}

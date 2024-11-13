@@ -32,7 +32,7 @@ const MakeRemoteWork = () =>{
             </span>
           </p>
           <div className="max-lg:mx-auto">
-            <button className="border  max-lg:bg-black text-white px-9 py-4 rounded-2xl text-lg font-bold lg:text-gray hover:text-foreground">
+            <button className="border bg-black text-white px-9 py-4 rounded-2xl text-lg font-bold hover:bg-white transition-colors duration-500 hover:text-foreground">
               Learn more
             </button>
           </div>

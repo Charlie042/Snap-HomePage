@@ -44,7 +44,7 @@ const NavItem: React.FC<navProps> = ({ item }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <button className="flex items-center gap-2 text-gray hover:text-black text-base">
+        <button className="flex items-center gap-2 text-gray hover:text-black transition-colors duration-700 text-base">
           {item.title}
           <LuChevronDown
             className={`transition-all duration-500 ${
