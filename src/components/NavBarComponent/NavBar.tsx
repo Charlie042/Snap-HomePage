@@ -93,7 +93,7 @@ const NavBar = () => {
       {/* mobile view */} 
       {isNavOpen ? (
         <div className="lg:hidden">
-          <SideNav navclose={setIsNavOpen} isOpen = {isNavOpen}/>
+          <SideNav navclose={setIsNavOpen} isOpen = {isNavOpen}  navs={navs}/>
         </div>
       ) : (
         <div
